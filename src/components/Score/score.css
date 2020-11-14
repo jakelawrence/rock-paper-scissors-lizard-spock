@@ -1,0 +1,50 @@
+.score-main {
+  width: 150px;
+  height: 115px;
+  background-color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+
+.score-details {
+  padding: 18px;
+  margin: auto;
+  text-align: center;
+}
+.score-text {
+  color: #2a46c0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.score-number {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #3b4363;
+}
+
+@media only screen and (max-width: 500px) {
+  .score-main {
+    width: 80px;
+    height: 70px;
+  }
+  .score-details {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+  }
+  .score-text {
+    color: #2a46c0;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .score-number {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #3b4363;
+  }
+}

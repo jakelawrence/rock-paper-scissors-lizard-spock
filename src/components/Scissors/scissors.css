@@ -1,0 +1,56 @@
+.scissors {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 158, 14, 1) 0%,
+    rgba(236, 169, 34, 1) 100%
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 9px rgb(163, 109, 9);
+  animation-direction: alternate;
+}
+.scissors-center {
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.scissors-center img {
+  width: 60px;
+}
+
+@keyframes pulsateScissor {
+  0% {
+    box-shadow: 0 9px rgb(163, 109, 9), 0 0 5px 20px #a3751f9f,
+      0 0 5px 40px #a3751f80, 0 0 5px 60px #a3751f5d;
+  }
+  100% {
+    box-shadow: 0 9px rgb(163, 109, 9), 0 0 5px 60px #a3751f9f,
+      0 0 5px 120px #a3751f80, 0 0 5px 180px #a3751f5d;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .scissors {
+    width: 100px;
+    height: 100px;
+  }
+  .scissors-center {
+    width: 75%;
+    height: 75%;
+
+    display: grid;
+    place-items: center;
+  }
+  .scissors-center img {
+    width: 30px;
+  }
+}

@@ -1,0 +1,56 @@
+.rock {
+  background: linear-gradient(
+    90deg,
+    rgba(220, 46, 78, 1) 0%,
+    rgba(221, 64, 93, 1) 100%
+  );
+  box-shadow: 0 9px rgb(145, 30, 51);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  animation-direction: alternate;
+}
+
+.rock-center {
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  animation: none;
+  display: grid;
+  place-items: center;
+}
+
+.rock-center img {
+  width: 60px;
+}
+
+@keyframes pulsateRock {
+  0% {
+    box-shadow: 0 9px rgb(145, 30, 51), 0 0 5px 20px #911e338a,
+      0 0 5px 40px #911e3360, 0 0 5px 60px #911e333f;
+  }
+  100% {
+    box-shadow: 0 9px rgb(145, 30, 51), 0 0 5px 60px #911e338a,
+      0 0 5px 120px #911e3360, 0 0 5px 180px #911e333f;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .rock {
+    width: 100px;
+    height: 100px;
+  }
+  .rock-center {
+    width: 75%;
+    height: 75%;
+
+    display: grid;
+    place-items: center;
+  }
+  .rock-center img {
+    width: 30px;
+  }
+}

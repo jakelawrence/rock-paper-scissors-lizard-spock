@@ -1,0 +1,57 @@
+.paper {
+  background: linear-gradient(
+    90deg,
+    rgba(72, 101, 244, 1) 0%,
+    rgba(86, 113, 245, 1) 100%
+  );
+  box-shadow: 0 9px rgb(42, 59, 146);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  animation-direction: alternate;
+}
+
+.paper-center {
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.paper-center img {
+  width: 60px;
+}
+
+@keyframes pulsatePaper {
+  0% {
+    box-shadow: 0 9px rgb(42, 59, 146), 0 0 5px 20px #26387098,
+      0 0 5px 40px #26387073, 0 0 5px 60px #26387042;
+  }
+  100% {
+    box-shadow: 0 9px rgb(42, 59, 146), 0 0 5px 60px #26387098,
+      0 0 5px 120px #26387073, 0 0 5px 180px #26387042;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .paper {
+    width: 100px;
+    height: 100px;
+  }
+  .paper-center {
+    width: 75%;
+    height: 75%;
+
+    display: grid;
+    place-items: center;
+  }
+  .paper-center img {
+    width: 30px;
+  }
+}

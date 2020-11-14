@@ -1,0 +1,38 @@
+.choice-main {
+  margin: auto;
+  width: 500px;
+  height: 550px;
+
+  background-image: url('../../images/bg-triangle.svg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 300px 300px;
+  padding: 15px;
+}
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+@media only screen and (max-width: 500px) {
+  .choice-main {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-size: 180px 180px;
+    margin-top: 20%;
+  }
+  .firstRow {
+    height: 50%;
+  }
+  .secondRow {
+    height: 50%;
+  }
+}

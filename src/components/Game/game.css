@@ -1,0 +1,144 @@
+.game-main {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  text-align: center;
+  color: white;
+}
+.player-choice {
+  width: 300px;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.house-choice {
+  width: 300px;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: 700;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.house-choosing {
+  width: 200px;
+  line-height: 100px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.house-choosing-symbol {
+  opacity: 0.5;
+  margin: auto;
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  animation-name: loading;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.display-winner {
+  margin: auto;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.play-again {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: white;
+  width: 220px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  color: rgb(212, 69, 69);
+}
+
+@keyframes loading {
+  0% {
+    background-color: rgb(56, 56, 56);
+  }
+  10% {
+    background-color: rgb(58, 58, 58);
+  }
+  20% {
+    background-color: rgb(60, 60, 60);
+  }
+  30% {
+    background-color: rgb(62, 62, 62);
+  }
+  40% {
+    background-color: rgb(64, 64, 64);
+  }
+  50% {
+    background-color: rgb(66, 66, 66);
+  }
+  60% {
+    background-color: rgb(68, 68, 68);
+  }
+  70% {
+    background-color: rgb(70, 70, 70);
+  }
+  80% {
+    background-color: rgb(72, 72, 72);
+  }
+  100% {
+    background-color: rgb(74, 74, 74);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .game-main {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-size: 180px 180px;
+    margin-top: 20%;
+  }
+  .player-choice {
+    width: 150px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+  .house-choice {
+    width: 150px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+  .play-again {
+    font-size: 15px;
+    width: 170px;
+    height: 40px;
+    color: hsl(229, 25%, 31%);
+  }
+  .display-winner {
+    position: absolute;
+    margin-top: 200px;
+    height: 150px;
+    font-size: 50px;
+    z-index: 2;
+  }
+  .house-choosing {
+    width: 150px;
+    line-height: 60px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .house-choosing-symbol {
+    width: 100px;
+    height: 100px;
+  }
+}
