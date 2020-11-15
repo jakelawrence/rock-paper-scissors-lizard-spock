@@ -84,6 +84,7 @@
     position: absolute;
     color: rgb(192, 192, 192);
     margin-top: 70vh;
+    cursor: pointer;
   }
   .actions {
     display: flex;
