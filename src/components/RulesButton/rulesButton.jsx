@@ -11,6 +11,16 @@ class RulesButton extends Component {
     }
   }
   showModal () {
+    if (document.getElementsByClassName('display-winner').length) {
+      let displayWinner = document.getElementsByClassName('display-winner')[0]
+      let compStyles = window.getComputedStyle(displayWinner)
+
+      if (compStyles.getPropertyValue('opacity') === '1') {
+        displayWinner.style.opacity = 0
+      } else {
+        displayWinner.style.opacity = 1
+      }
+    }
     this.setState({
       show: !this.state.show
     })

@@ -22,7 +22,7 @@ class App extends React.Component {
   // then the score is saved to local storage for refresh capability
   handleScore (winner) {
     let currentScore = this.state.score
-    console.log(winner)
+
     switch (winner) {
       case 'player':
         this.setState({ score: currentScore + 1 }, () => {
