@@ -23,12 +23,11 @@
   margin-top: 60px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .choice-main {
     width: 330px;
     height: 370px;
     background-size: 270px 270px;
-    margin-top: 50px;
   }
   .choice-main .thirdRow {
     margin-top: 30px;

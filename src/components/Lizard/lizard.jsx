@@ -8,7 +8,7 @@ class Lizard extends Component {
   }
   handleMouseDown () {
     let lizard = document.getElementsByClassName('lizard')
-    if (window.innerWidth > 375) {
+    if (window.innerWidth > 414) {
       lizard[0].style.boxShadow = '0 5px hsl(260, 42%, 35%)'
       lizard[0].style.transform = 'translateY(4px)'
     } else {

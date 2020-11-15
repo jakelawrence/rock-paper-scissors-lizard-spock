@@ -9,7 +9,7 @@ class Rock extends Component {
   handleMouseDown () {
     let rock = document.getElementsByClassName('rock')
 
-    if (window.outerWidth > 376) {
+    if (window.outerWidth > 414) {
       rock[0].style.boxShadow = '0 5px rgb(104, 22, 37)'
       rock[0].style.transform = 'translateY(4px)'
     } else {

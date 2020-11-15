@@ -8,7 +8,7 @@ class Scissors extends Component {
   }
   handleMouseDown () {
     let scissors = document.getElementsByClassName('scissors')
-    if (window.innerWidth > 375) {
+    if (window.innerWidth > 414) {
       scissors[0].style.boxShadow = '0 5px hsl(39, 89%, 29%)'
       scissors[0].style.transform = 'translateY(4px)'
     } else {

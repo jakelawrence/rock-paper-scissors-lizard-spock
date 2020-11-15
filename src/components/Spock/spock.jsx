@@ -8,7 +8,7 @@ class Spock extends Component {
   }
   handleMouseDown () {
     let spock = document.getElementsByClassName('spock')
-    if (window.innerWidth > 375) {
+    if (window.innerWidth > 414) {
       spock[0].style.boxShadow = '0 5px hsl(189, 43%, 35%)'
       spock[0].style.transform = 'translateY(4px)'
     } else {

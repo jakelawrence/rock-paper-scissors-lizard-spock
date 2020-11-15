@@ -147,7 +147,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .player-choice {
     width: 170px;
     line-height: 20px;

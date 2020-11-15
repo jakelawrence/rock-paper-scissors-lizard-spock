@@ -50,7 +50,7 @@ class App extends React.Component {
   //sets timeout so the animation isn't instant
   handlePaper () {
     let paper = document.getElementsByClassName('paper')
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 414) {
       paper[0].style.boxShadow = '0 9px rgb(42, 59, 146)'
     } else {
       paper[0].style.boxShadow = '0 6px rgb(42, 59, 146)'
@@ -64,7 +64,7 @@ class App extends React.Component {
   //same as handlePaper() but for scissors
   handleScissors () {
     let scissors = document.getElementsByClassName('scissors')
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 414) {
       scissors[0].style.boxShadow = '0 9px rgb(163, 109, 9)'
     } else {
       scissors[0].style.boxShadow = '0 6px rgb(163, 109, 9)'
@@ -79,7 +79,7 @@ class App extends React.Component {
   //same as handlePaper() but for rock
   handleRock () {
     let rock = document.getElementsByClassName('rock')
-    if (window.outerWidth > 376) {
+    if (window.outerWidth > 414) {
       rock[0].style.boxShadow = '0 9px rgb(145, 30, 51)'
     } else {
       rock[0].style.boxShadow = '0 6px rgb(145, 30, 51)'
@@ -93,7 +93,7 @@ class App extends React.Component {
   //same as handlePaper() but for Spock
   handleSpock () {
     let spock = document.getElementsByClassName('spock')
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 414) {
       spock[0].style.boxShadow = '0 9px rgb(62, 144, 158)'
     } else {
       spock[0].style.boxShadow = '0 6px rgb(62, 144, 158)'
@@ -107,7 +107,7 @@ class App extends React.Component {
   //same as handlePaper() but for Lizard
   handleLizard () {
     let lizard = document.getElementsByClassName('lizard')
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 414) {
       lizard[0].style.boxShadow = '0 9px hsl(260, 42%, 42%)'
     } else {
       lizard[0].style.boxShadow = '0 6px hsl(260, 42%, 42%)'

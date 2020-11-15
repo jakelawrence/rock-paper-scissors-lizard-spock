@@ -59,7 +59,7 @@
   color: #3b4363;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .modal {
     background-color: white;
     transition: none;
