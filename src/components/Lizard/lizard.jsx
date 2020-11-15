@@ -6,6 +6,9 @@ class Lizard extends Component {
   handleLizard () {
     this.props.lizard()
   }
+
+  //animate button press down when user clicks mouse down
+  //different animations for moblie and desktop
   handleMouseDown () {
     let lizard = document.getElementsByClassName('lizard')
     if (window.innerWidth > 500) {

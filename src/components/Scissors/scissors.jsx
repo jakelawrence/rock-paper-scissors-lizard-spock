@@ -6,6 +6,8 @@ class Scissors extends Component {
   handleScissors () {
     this.props.scissors()
   }
+  //animate button press down when user clicks mouse down
+  //different animations for moblie and desktop
   handleMouseDown () {
     let scissors = document.getElementsByClassName('scissors')
     if (window.innerWidth > 414) {

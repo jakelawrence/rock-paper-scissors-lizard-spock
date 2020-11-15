@@ -6,6 +6,8 @@ class Spock extends Component {
   handleSpock () {
     this.props.spock()
   }
+  //animate button press down when user clicks mouse down
+  //different animations for moblie and desktop
   handleMouseDown () {
     let spock = document.getElementsByClassName('spock')
     if (window.innerWidth > 414) {

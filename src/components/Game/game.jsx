@@ -14,7 +14,7 @@ class Game extends Component {
   componentDidMount () {
     this.setState({ winner: null })
     setTimeout(() => {
-      this.delayHousePick()
+      this.setState({ houseChoiceReady: true })
 
       setTimeout(() => {
         this.chooseWinner()
@@ -22,18 +22,17 @@ class Game extends Component {
     }, 2000)
   }
 
+  //assign handleScore to props for main app
   handleScore () {
     this.props.handleScore(this.state.winner)
   }
 
+  //assign handleScore to props
   handlePlayAgain () {
     this.props.playAgain()
   }
 
-  delayHousePick () {
-    this.setState({ houseChoiceReady: true })
-  }
-
+  //sets state of winner, ie player or house
   chooseWinner () {
     let player = this.props.playerChoice
     let house = this.props.houseChoice
@@ -100,6 +99,8 @@ class Game extends Component {
     }
     this.handleScore()
   }
+
+  //adds winning animations and offsets winner so animation doesn't overlap loser's piece
   handleWinner = (winner, winnersChoice) => {
     if (winner === 'player') {
       let winnerPiece = document.getElementsByClassName('player-choice')[0]
@@ -126,34 +127,6 @@ class Game extends Component {
       winnerPiece.style.zIndex = '0'
       loserPiece.style.zIndex = '1'
     }
-    // if (winnersChoice === 'paper') {
-    //   winnerStyle[0].style.animation = 'pulsatePaper 1s ease-out infinite'
-    //   winnerStyle[0].style.animationDirection = 'alternate'
-    //   winnerStyle[0].style.zIndex = '-1'
-    //   loserStyle[0].style.zIndex = '1'
-    // } else if (winnersChoice === 'scissors') {
-    //   winnerStyle[0].style.animation = 'pulsateScissor 1s ease-out infinite'
-    //   winnerStyle[0].style.animationDirection = 'alternate'
-    //   winnerStyle[0].style.zIndex = '-1'
-    //   loserStyle[0].style.zIndex = 1
-    // } else if (winnersChoice === 'rock') {
-    //   winnerStyle[0].style.animation = 'pulsateRock 1s ease-out infinite'
-    //   let loserStyle = document.getElementsByClassName(losersChoice)
-    //   winnerStyle[0].style.animationDirection = 'alternate'
-    //   winnerStyle[0].style.zIndex = '-1'
-    //   loserStyle[0].style.zIndex = 1
-    // } else if (winnersChoice === 'spock') {
-    //   winnerStyle[0].style.animation = 'pulsateSpock 1s ease-out infinite'
-    //   let loserStyle = document.getElementsByClassName(losersChoice)
-    //   winnerStyle[0].style.animationDirection = 'alternate'
-    //   winnerStyle[0].style.zIndex = '-1'
-    //   loserStyle[0].style.zIndex = 1
-    // } else if (winnersChoice === 'lizard') {
-    //   winnerStyle[0].style.animation = 'pulsateLizard 1s ease-out infinite'
-    //   winnerStyle[0].style.animationDirection = 'alternate'
-    //   winnerStyle[0].style.zIndex = '-1'
-    //   loserStyle[0].style.zIndex = 1
-    // }
   }
   render () {
     return (
