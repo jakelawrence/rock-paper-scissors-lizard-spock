@@ -6,9 +6,10 @@ class Rock extends Component {
   handleRock () {
     this.props.rock()
   }
+  //animate button press down when user clicks mouse down
+  //different animations for moblie and desktop
   handleMouseDown () {
     let rock = document.getElementsByClassName('rock')
-
     if (window.outerWidth > 414) {
       rock[0].style.boxShadow = '0 5px rgb(104, 22, 37)'
       rock[0].style.transform = 'translateY(4px)'

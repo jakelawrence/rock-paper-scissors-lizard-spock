@@ -10,7 +10,7 @@
   visibility: visible;
   margin: auto;
   position: fixed;
-
+  z-index: 2;
   left: 0;
   top: 0;
   display: flex;
@@ -67,12 +67,14 @@
   }
   .modal-content {
     border: none;
+    padding-bottom: 150px;
   }
   .modal-content img {
     margin: auto;
     padding: 15px;
     padding-top: 25px;
-    width: 250px;
+
+    width: 300px;
   }
   .actions button {
     border: none;
@@ -81,7 +83,7 @@
     font-size: 25px;
     position: absolute;
     color: rgb(192, 192, 192);
-    margin-top: 400px;
+    margin-top: 70vh;
   }
   .actions {
     display: flex;

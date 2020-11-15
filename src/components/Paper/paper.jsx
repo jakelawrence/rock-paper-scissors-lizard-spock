@@ -6,6 +6,8 @@ class Paper extends Component {
   handlePaper () {
     this.props.paper()
   }
+  //animate button press down when user clicks mouse down
+  //different animations for moblie and desktop
   handleMouseDown () {
     let paper = document.getElementsByClassName('paper')
     if (window.innerWidth > 500) {

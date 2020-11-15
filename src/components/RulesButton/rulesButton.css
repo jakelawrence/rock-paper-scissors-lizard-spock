@@ -23,6 +23,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
+  background-color: rgb(21, 23, 61);
   color: rgb(221, 221, 221);
 }
 

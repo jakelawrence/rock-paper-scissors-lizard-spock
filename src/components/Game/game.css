@@ -78,6 +78,7 @@
   margin: 20px;
   border-radius: 10px;
   color: hsl(229, 25%, 31%);
+  cursor: pointer;
 }
 
 @keyframes loading {

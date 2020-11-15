@@ -112,10 +112,11 @@ class Game extends Component {
         'pulsate' + winnerCapitalized + ' 1s ease-out infinite'
 
       winnerStyle.animationDirection = 'alternate'
-      winnerPiece.style.zIndex = '0'
-      loserPiece.style.zIndex = '1'
-    }
-    if (winner === 'house') {
+      if (window.outerWidth <= 500) {
+        winnerPiece.style.zIndex = '0'
+        loserPiece.style.zIndex = '1'
+      }
+    } else if (winner === 'house') {
       let winnerPiece = document.getElementsByClassName('house-choice')[0]
       let loserPiece = document.getElementsByClassName('player-choice')[0]
       let winnerStyle = document.getElementsByClassName(winnersChoice)[0].style
@@ -124,8 +125,10 @@ class Game extends Component {
       winnerStyle.animation =
         'pulsate' + winnerCapitalized + ' 1s ease-out infinite'
       winnerStyle.animationDirection = 'alternate'
-      winnerPiece.style.zIndex = '0'
-      loserPiece.style.zIndex = '1'
+      if (window.outerWidth <= 500) {
+        winnerPiece.style.zIndex = '0'
+        loserPiece.style.zIndex = '1'
+      }
     }
   }
   render () {
