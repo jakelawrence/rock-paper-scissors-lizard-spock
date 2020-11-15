@@ -8,7 +8,7 @@ class Paper extends Component {
   }
   handleMouseDown () {
     let paper = document.getElementsByClassName('paper')
-    if (window.innerWidth > 414) {
+    if (window.innerWidth > 500) {
       paper[0].style.boxShadow = '0 5px rgb(32, 45, 110)'
       paper[0].style.transform = 'translateY(4px)'
     } else {

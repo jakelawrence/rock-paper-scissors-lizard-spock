@@ -28,9 +28,12 @@
   .head-main {
     height: 100px;
   }
+  .head-container {
+    padding: 15px;
+  }
   .head-main img {
     padding: 15px;
-    width: 80px;
+    width: 70px;
     height: 70px;
   }
 }

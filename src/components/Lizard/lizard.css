@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
   .lizard {
     width: 110px;
     height: 110px;

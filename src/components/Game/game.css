@@ -16,7 +16,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  z-index: 0;
+  grid-template-rows: 25% auto;
 }
 
 .player-choice-title {
@@ -27,12 +27,13 @@
   width: 300px;
   height: 400px;
   margin-left: 20px;
-  line-height: 120px;
+
   font-size: 25px;
   font-weight: 700;
   position: relative;
   display: grid;
   place-items: center;
+  grid-template-rows: 25% auto;
 }
 
 .house-choice-title {
@@ -120,24 +121,31 @@
 @media only screen and (max-width: 1000px) {
   .house-choice {
     margin-left: 15px;
+    height: 300px;
   }
   .player-choice {
     margin-right: 15px;
+    height: 300px;
   }
   .house-choosing-symbol {
     width: 225px;
     height: 225px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .display-winner {
+    padding-top: 100px;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .house-choice {
     margin-left: 10px;
+    height: 200px;
   }
   .player-choice {
     margin-right: 10px;
+    height: 200px;
   }
   .house-choosing-symbol {
     width: 225px;
@@ -145,39 +153,49 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .player-choice-title {
+    font-size: 15px;
+  }
+  .house-choice-title {
+    font-size: 15px;
+  }
+  .display-winner {
+    padding-top: 80px;
+  }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
   .player-choice {
     width: 170px;
     height: 200px;
-    line-height: 20px;
     position: relative;
+    grid-template-rows: 100%;
   }
   .house-choice {
     height: 200px;
     width: 170px;
+    grid-template-rows: 100%;
+    position: relative;
   }
   .house-choosing {
     height: 200px;
     width: 170px;
   }
   .display-winner {
-    margin-top: 70px;
+    margin-top: 25vh;
     position: absolute;
     height: 100px;
   }
   .player-choice-title {
     position: absolute;
     margin-top: 250px;
-    line-height: 0;
-    font-size: 20px;
+
+    font-size: 15px;
   }
   .house-choice-title {
     position: absolute;
     margin-top: 250px;
-    line-height: 0;
-    font-size: 20px;
+    font-size: 15px;
   }
   .house-choosing-symbol {
     width: 140px;
