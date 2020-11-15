@@ -43,7 +43,7 @@
   width: 80px;
 }
 
-@keyframes pulsateScissor {
+@keyframes pulsateScissors {
   0% {
     box-shadow: 0 15px hsl(39, 89%, 33%), 0 0 5px 20px hsla(39, 89%, 28%, 0.699),
       0 0 5px 40px hsla(39, 89%, 28%, 0.473),
