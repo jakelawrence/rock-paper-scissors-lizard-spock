@@ -30,9 +30,12 @@ class App extends React.Component {
         })
         break
       case 'house':
-        this.setState({ score: currentScore - 1 }, () => {
-          localStorage.setItem('score', JSON.stringify(this.state.score))
-        })
+        if (currentScore > 0) {
+          this.setState({ score: currentScore - 1 }, () => {
+            localStorage.setItem('score', JSON.stringify(this.state.score))
+          })
+        }
+
         break
 
       default:

@@ -11,6 +11,7 @@
   place-items: center;
   box-shadow: 0 9px hsl(260, 42%, 42%);
   animation-direction: alternate;
+  cursor: pointer;
 }
 .lizard-center {
   background: white;

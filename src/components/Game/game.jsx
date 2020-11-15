@@ -183,10 +183,10 @@ class Game extends Component {
             </>
           )}
           {!this.state.houseChoiceReady && (
-            <div className='house-choosing'>
+            <>
               <div className='house-choice-title'>THE HOUSE PICKED</div>
-              <div className='house-choosing-symbol'></div>
-            </div>
+              <div className='house-choosing'></div>
+            </>
           )}
         </div>
       </div>

@@ -11,6 +11,7 @@
   place-items: center;
   box-shadow: 0 9px hsl(39, 89%, 33%);
   animation-direction: alternate;
+  cursor: pointer;
 }
 .scissors-center {
   background: white;

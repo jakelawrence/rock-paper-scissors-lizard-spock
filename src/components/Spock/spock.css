@@ -7,11 +7,11 @@
   width: 150px;
   height: 150px;
   border-radius: 100%;
-
   display: grid;
   place-items: center;
   box-shadow: 0 9px hsl(189, 43%, 44%);
   animation-direction: alternate;
+  cursor: pointer;
 }
 .spock-center {
   background: white;
