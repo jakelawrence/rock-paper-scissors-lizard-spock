@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Score from '../Score/score.jsx'
-import logo from '../../images/logo.svg'
+import logo from '../../images/logo-bonus.svg'
 import './head.css'
 
 class Head extends Component {

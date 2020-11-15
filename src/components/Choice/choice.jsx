@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-
 import Paper from '../Paper/paper.jsx'
 import Scissors from '../Scissors/scissors.jsx'
 import Rock from '../Rock/rock.jsx'
+import Spock from '../Spock/spock.jsx'
+import Lizard from '../Lizard/lizard.jsx'
 
 import './choice.css'
 
@@ -17,16 +18,26 @@ class Choice extends Component {
   handleRock () {
     this.props.rock()
   }
+  handleSpock () {
+    this.props.spock()
+  }
+  handleLizard () {
+    this.props.lizard()
+  }
 
   render () {
     return (
       <div className='choice-main'>
         <div className='firstRow'>
-          <Paper paper={this.handlePaper.bind(this)} />
-          <Rock rock={this.handleRock.bind(this)} />
+          <Scissors scissors={this.handleScissors.bind(this)} />
         </div>
         <div className='secondRow'>
-          <Scissors scissors={this.handleScissors.bind(this)} />
+          <Spock spock={this.handleSpock.bind(this)} />
+          <Paper paper={this.handlePaper.bind(this)} />
+        </div>
+        <div className='thirdRow'>
+          <Lizard lizard={this.handleLizard.bind(this)} />
+          <Rock rock={this.handleRock.bind(this)} />
         </div>
       </div>
     )

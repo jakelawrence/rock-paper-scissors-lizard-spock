@@ -1,7 +1,7 @@
 import React from 'react'
 import './rules.css'
 import PropTypes from 'prop-types'
-import RulesImg from '../../images/image-rules.svg'
+import RulesImg from '../../images/image-rules-bonus.svg'
 
 export default class Rules extends React.Component {
   onClose = e => {
@@ -12,11 +12,11 @@ export default class Rules extends React.Component {
       return null
     }
     return (
-      <div class='modal' id='modal'>
+      <div className='modal' id='modal'>
         <div className='modal-content'>
-          <div class='actions'>
+          <div className='actions'>
             <div className='rules-text'>RULES</div>
-            <button class='toggle-button' onClick={this.onClose}>
+            <button className='toggle-button' onClick={this.onClose}>
               X
             </button>
           </div>

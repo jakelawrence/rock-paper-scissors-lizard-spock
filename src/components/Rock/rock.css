@@ -1,14 +1,14 @@
 .rock {
   background: linear-gradient(
     90deg,
-    rgba(220, 46, 78, 1) 0%,
-    rgba(221, 64, 93, 1) 100%
+    hsl(349, 71%, 52%) 0%,
+    hsl(349, 70%, 56%) 100%
   );
-  box-shadow: 0 9px rgb(145, 30, 51);
-  width: 200px;
-  height: 200px;
+  box-shadow: 0 9px hsl(349, 66%, 37%);
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
-  margin: auto;
+
   display: grid;
   place-items: center;
   animation-direction: alternate;
@@ -16,41 +16,109 @@
 
 .rock-center {
   background: white;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   animation: none;
   display: grid;
   place-items: center;
+  box-shadow: 0 7px inset rgb(216, 216, 216);
 }
 
 .rock-center img {
-  width: 60px;
+  width: 50px;
+}
+
+.game-main .rock {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 15px hsl(349, 66%, 37%);
+}
+
+.game-main .rock-center {
+  width: 240px;
+  height: 240px;
+  box-shadow: 0 12px inset rgb(216, 216, 216);
+}
+
+.game-main .rock-center img {
+  width: 80px;
 }
 
 @keyframes pulsateRock {
   0% {
-    box-shadow: 0 9px rgb(145, 30, 51), 0 0 5px 20px #911e338a,
-      0 0 5px 40px #911e3360, 0 0 5px 60px #911e333f;
+    box-shadow: 0 15px hsl(349, 66%, 37%),
+      0 0 5px 20px hsla(349, 66%, 27%, 0.699),
+      0 0 5px 40px hsla(349, 66%, 27%, 0.473),
+      0 0 5px 60px hsla(349, 66%, 27%, 0.322);
   }
   100% {
-    box-shadow: 0 9px rgb(145, 30, 51), 0 0 5px 60px #911e338a,
-      0 0 5px 120px #911e3360, 0 0 5px 180px #911e333f;
+    box-shadow: 0 15px hsl(349, 66%, 37%),
+      0 0 5px 60px hsla(349, 66%, 27%, 0.699),
+      0 0 5px 120px hsla(349, 66%, 27%, 0.473),
+      0 0 5px 180px hsla(349, 66%, 27%, 0.322);
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
+  .game-main .rock {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 13px hsl(349, 66%, 37%);
+  }
+
+  .game-main .rock-center {
+    width: 190px;
+    height: 190px;
+    box-shadow: 0 10px inset rgb(216, 216, 216);
+  }
+  .game-main .rock-center img {
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .game-main .rock {
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 13px hsl(349, 66%, 37%);
+  }
+
+  .game-main .rock-center {
+    width: 170px;
+    height: 170px;
+    box-shadow: 0 10px inset rgb(216, 216, 216);
+  }
+  .game-main .rock-center img {
+    width: 65px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
   .rock {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0 6px hsl(349, 66%, 37%);
   }
   .rock-center {
-    width: 75%;
-    height: 75%;
-
-    display: grid;
-    place-items: center;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 5px inset rgb(216, 216, 216);
   }
   .rock-center img {
-    width: 30px;
+    width: 35px;
+  }
+  .game-main .rock {
+    width: 150px;
+    height: 150px;
+
+    box-shadow: 0 13px hsl(349, 66%, 37%);
+  }
+
+  .game-main .rock-center {
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 10px inset rgb(216, 216, 216);
+  }
+  .game-main .rock-center img {
+    width: 65px;
   }
 }

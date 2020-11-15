@@ -1,18 +1,18 @@
-.scissors {
+.lizard {
   background: linear-gradient(
     90deg,
-    hsl(39, 89%, 49%) 0%,
-    hsl(40, 84%, 53%) 100%
+    hsl(261, 73%, 60%) 0%,
+    hsl(261, 72%, 63%) 100%
   );
   width: 150px;
   height: 150px;
   border-radius: 100%;
   display: grid;
   place-items: center;
-  box-shadow: 0 9px hsl(39, 89%, 33%);
+  box-shadow: 0 9px hsl(260, 42%, 42%);
   animation-direction: alternate;
 }
-.scissors-center {
+.lizard-center {
   background: white;
   width: 120px;
   height: 120px;
@@ -22,101 +22,101 @@
   place-items: center;
 }
 
-.scissors-center img {
+.lizard-center img {
   width: 50px;
 }
 
-.game-main .scissors {
+.game-main .lizard {
   width: 300px;
   height: 300px;
-  box-shadow: 0 15px hsl(39, 89%, 33%);
+  box-shadow: 0 15px hsl(260, 42%, 42%);
 }
 
-.game-main .scissors-center {
+.game-main .lizard-center {
   width: 240px;
   height: 240px;
   box-shadow: 0 12px inset rgb(216, 216, 216);
 }
 
-.game-main .scissors-center img {
+.game-main .lizard-center img {
   width: 80px;
 }
-
-@keyframes pulsateScissor {
+@keyframes pulsateLizard {
   0% {
-    box-shadow: 0 15px hsl(39, 89%, 33%), 0 0 5px 20px hsla(39, 89%, 28%, 0.699),
-      0 0 5px 40px hsla(39, 89%, 28%, 0.473),
-      0 0 5px 60px hsla(39, 89%, 28%, 0.322);
+    box-shadow: 0 15px hsl(260, 42%, 42%),
+      0 0 5px 20px hsla(260, 43%, 34%, 0.699),
+      0 0 5px 40px hsla(260, 43%, 34%, 0.473),
+      0 0 5px 60px hsla(260, 43%, 34%, 0.322);
   }
   100% {
-    box-shadow: 0 15px hsl(39, 89%, 33%), 0 0 5px 60px hsla(39, 89%, 28%, 0.699),
-      0 0 5px 120px hsla(39, 89%, 28%, 0.473),
-      0 0 5px 180px hsla(39, 89%, 28%, 0.322);
+    box-shadow: 0 15px hsl(260, 42%, 42%),
+      0 0 5px 60px hsla(260, 43%, 34%, 0.699),
+      0 0 5px 120px hsla(260, 43%, 34%, 0.473),
+      0 0 5px 180px hsla(260, 43%, 34%, 0.322);
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .game-main .scissors {
+  .game-main .lizard {
     width: 250px;
     height: 250px;
-    box-shadow: 0 13px hsl(39, 89%, 33%);
+    box-shadow: 0 13px hsl(260, 42%, 42%);
   }
 
-  .game-main .scissors-center {
+  .game-main .lizard-center {
     width: 190px;
     height: 190px;
     box-shadow: 0 10px inset rgb(216, 216, 216);
   }
-  .game-main .scissors-center img {
+  .game-main .lizard-center img {
     width: 70px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .game-main .scissors {
+  .game-main .lizard {
     width: 220px;
     height: 220px;
-    box-shadow: 0 13px hsl(39, 89%, 33%);
+    box-shadow: 0 13px hsl(260, 42%, 42%);
   }
 
-  .game-main .scissors-center {
+  .game-main .lizard-center {
     width: 170px;
     height: 170px;
     box-shadow: 0 10px inset rgb(216, 216, 216);
   }
-  .game-main .scissors-center img {
+  .game-main .lizard-center img {
     width: 65px;
   }
 }
 
 @media only screen and (max-width: 376px) {
-  .scissors {
+  .lizard {
     width: 110px;
     height: 110px;
-    box-shadow: 0 6px hsl(39, 89%, 33%);
+    box-shadow: 0 6px hsl(260, 42%, 42%);
   }
-  .scissors-center {
+  .lizard-center {
     width: 80px;
     height: 80px;
     box-shadow: 0 5px inset rgb(216, 216, 216);
   }
-  .scissors-center img {
+  .lizard-center img {
     width: 35px;
   }
-
-  .game-main .scissors {
+  .game-main .lizard {
     width: 150px;
     height: 150px;
 
-    box-shadow: 0 13px hsl(39, 89%, 33%);
+    box-shadow: 0 13px hsl(260, 42%, 42%);
   }
 
-  .game-main .scissors-center {
+  .game-main .lizard-center {
     width: 120px;
     height: 120px;
     box-shadow: 0 10px inset rgb(216, 216, 216);
   }
-  .game-main .scissors-center img {
+  .game-main .lizard-center img {
     width: 65px;
   }
 }

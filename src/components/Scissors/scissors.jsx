@@ -8,8 +8,13 @@ class Scissors extends Component {
   }
   handleMouseDown () {
     let scissors = document.getElementsByClassName('scissors')
-    scissors[0].style.boxShadow = '0 5px rgb(145, 97, 8)'
-    scissors[0].style.transform = 'translateY(4px)'
+    if (window.innerWidth > 375) {
+      scissors[0].style.boxShadow = '0 5px hsl(39, 89%, 29%)'
+      scissors[0].style.transform = 'translateY(4px)'
+    } else {
+      scissors[0].style.boxShadow = '0 2px hsl(39, 89%, 29%)'
+      scissors[0].style.transform = 'translateY(4px)'
+    }
   }
 
   render () {
@@ -17,6 +22,8 @@ class Scissors extends Component {
       <div
         onMouseDown={this.props.scissors && this.handleMouseDown.bind(this)}
         onMouseUp={this.props.scissors && this.handleScissors.bind(this)}
+        onTouchStart={this.props.scissors && this.handleMouseDown.bind(this)}
+        onTouchEnd={this.props.scissors && this.handleScissors.bind(this)}
         className='scissors'
       >
         <div className='scissors-center'>

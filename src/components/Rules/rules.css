@@ -10,7 +10,7 @@
   visibility: visible;
   margin: auto;
   position: fixed;
-  z-index: 3; /* Sit on top */
+  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
   display: flex;
@@ -29,6 +29,7 @@
   padding: 20px;
   border: 1px solid #888;
   border-radius: 10px;
+  position: relative;
 }
 
 .modal-content img {
