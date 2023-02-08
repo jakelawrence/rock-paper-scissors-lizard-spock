@@ -1,6 +1,35 @@
-# Getting Started with Create React App
+# Live Demo
 
-Live Demo: https://jakelawrence.github.io/rock-paper-scissors/
+https://jakelawrence.github.io/rock-paper-scissors/
+
+# Rock, Paper, Scissors, Lizard, Spock
+
+## Objective
+The objective of the game is to beat your opponent by selecting a gesture that beats two of your opponent's gestures and loses to the other two.
+
+## Gestures
+1. Rock
+2. Paper
+3. Scissors
+4. Lizard
+5. Spock
+
+## Rules
+1. Rock crushes Scissors
+2. Scissors cuts Paper
+3. Paper covers Rock
+4. Rock crushes Lizard
+5. Lizard poisons Spock
+6. Spock smashes Scissors
+7. Scissors decapitates Lizard
+8. Lizard eats Paper
+9. Paper disproves Spock
+10. Spock vaporizes Rock
+
+## Play
+The game is typically played between two players, with each player choosing one of the five gestures. The gesture with the winning move as described above, wins the round. The game can be played best out of three or more rounds.
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
