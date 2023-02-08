@@ -1,6 +1,6 @@
 # Live Demo
 
-https://jakelawrence.github.io/rock-paper-scissors/
+https://jakelawrence.github.io/rock-paper-scissors-lizard-spock/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
