@@ -2,6 +2,8 @@
 
 https://jakelawrence.github.io/rock-paper-scissors/
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 # Rock, Paper, Scissors, Lizard, Spock
 
 ## Objective
@@ -27,11 +29,7 @@ The objective of the game is to beat your opponent by selecting a gesture that b
 10. Spock vaporizes Rock
 
 ## Play
-The game is typically played between two players, with each player choosing one of the five gestures. The gesture with the winning move as described above, wins the round. The game can be played best out of three or more rounds.
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The game is played between two players (in this case you and the computer), with each player choosing one of the five gestures. The gesture with the winning move as described above, wins the round. 
 
 ## Available Scripts
 
