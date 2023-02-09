@@ -4,6 +4,8 @@ https://jakelawrence.github.io/rock-paper-scissors-lizard-spock/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Rock, Paper, Scissors, Lizard, Spock](https://raw.githubusercontent.com/jakelawrence/rock-paper-scissors-lizard-spock/master/img/rock-paper-scissors-lizard-spock.jpg?raw=true)
+
 # Rock, Paper, Scissors, Lizard, Spock
 
 ## Objective
